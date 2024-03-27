@@ -1,0 +1,145 @@
+/* this is where all of your CSS styles go */
+
+.cover {
+	width: 475px;
+	height:712.5px;
+	background: #181d47;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+
+/* imagery
+circle moving away
+title rising up + moving 0-1 opacity */
+
+
+
+.stars{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0%;
+	top: 0%;
+	right: 0%;
+	bottom: 0%;
+	display: block;
+	background: url(http://www.script-tutorials.com/demos/360/images/stars.png);
+	repeat top center;
+	z-index: 0;
+	animation: starlight forwards 10s;
+}
+
+@keyframes starlight {
+	0% { background-position: 0% 0%; transform: rotate(0deg);}
+	100% { background-position: 0% 20%; transform: rotate(10deg); }
+}
+
+
+.fullmoon {
+	width: 90px;
+	height: 90px;
+	background: goldenrod;
+	position: absolute;
+	left: 40%;
+	top: 10%;
+	border-radius: 100%;
+	cursor: pointer;
+}
+
+.crescentmoon {
+	width: 80px;
+	height: 80px;
+	background: #181d47;
+	position: absolute;
+	left: 45%;
+	top: 10%;
+	border-radius: 100%;
+}
+
+/* typography */
+
+	.playfair-display {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: <400>;
+  font-style: normal;
+  z-index: 1;
+}
+
+.heading {
+	font-family: 'Roboto Flex';
+	font-size: 15px; 
+	font-stretch: 150%;
+	width: 100%;
+	color: white;
+	position: absolute;
+	letter-spacing: 1px;
+	left: 0%;
+	top: 1%;
+	text-align: center;
+	z-index: 1;
+}
+
+.title {
+	font-family: 'Playfair Display';
+	font-size: 6.5em; 
+	width: 100%;
+	color: white;
+	position: absolute;
+	letter-spacing: 0.3px;
+	left: 0%;
+	top: 11%;
+	text-align: center;
+	z-index: 1;
+}
+
+@font-face {
+	font-family: 'Roboto Flex';
+	src: url(../fonts/RobotoFlex.ttf);
+}
+
+.subtitle {
+	font-family: 'Roboto Flex';
+	font-size: 1.5em; 
+	width: 100%;
+	font-stretch: 150%;
+	color: goldenrod;
+	position: absolute;
+	letter-spacing: 2px;
+	left: 0%;
+	top: 65%;
+	text-align: center;
+	line-height: 160%;
+	z-index: 1;
+}
+
+.author {
+	font-family: 'Playfair Display';
+	font-size: 2.3em; 
+	width: 100%;
+	color: white;
+	position: absolute;
+	letter-spacing: 2px;
+	left: 0%;
+	top: 77%;
+	text-align: center;
+	z-index: 1;
+}
+
+.footer {
+	font-family: 'Roboto Flex';
+	font-size: 10px; 
+	width: 100%;
+	color: white;
+	position: absolute;
+	letter-spacing: 0.5px;
+	left: 0%;
+	top: 90%;
+	text-align: center;
+	line-height: 175%;
+	z-index: 1;
+}
+
